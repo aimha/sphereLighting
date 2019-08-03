@@ -1,0 +1,13 @@
+﻿  ofApp.cpp
+d:\07_of\of_v0.10.0_vs2017_release\apps\myapps\spherelighting\src\ofapp.cpp(34): warning C4996: 'ofRotateX': Use ofRotateXDeg or ofRotateXRad
+  d:\07_of\of_v0.10.0_vs2017_release\libs\openframeworks\graphics\ofgraphics.h(1022): note: vedere la dichiarazione di 'ofRotateX'
+     Creazione della libreria bin\sphereLighting.lib e dell'oggetto bin\sphereLighting.exp
+  LINK : è stata specificata l'opzione /LTCG ma non è richiesta la generazione del codice; rimuovere /LTCG dalla riga di comando del collegamento per migliorare le prestazioni del linker
+  sphereLighting.vcxproj -> D:\07_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\sphereLighting.exe
+  
+  	                   2	D:\07_OF\of_v0.10.0_vs2017_release\libs\fmodex\lib\vs\Win32\
+  	  *File supplementare		 5647872	D:\07_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\FreeImage.dll
+  
+  	                   1	D:\07_OF\of_v0.10.0_vs2017_release\libs\FreeImage\lib\vs\Win32\
+  	  *File supplementare		 1266176	D:\07_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\fmodex.dll
+  	  *File supplementare		 1312768	D:\07_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\fmodexL.dll
