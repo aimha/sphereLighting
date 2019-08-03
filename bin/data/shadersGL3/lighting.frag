@@ -14,7 +14,6 @@ in vec2 texcoord;
 
 uniform mat4 normalMatrix;
 
-in vec4 v_pos;
 in vec3 v_normal;
 
 uniform float time;

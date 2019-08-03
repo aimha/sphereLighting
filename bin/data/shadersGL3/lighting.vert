@@ -21,9 +21,8 @@ out vec3 v_normal;
 void main(){
     vec4 modifiedPosition = modelViewProjectionMatrix * position;
 
-    float scale = 100.;
-    float displacementY = sin(position.x / 20.) * scale;
-
+    float scale = 200.;
+    float displacementY = sin(position.x / 200.) * scale;
     modifiedPosition.y += displacementY;
 
     mat4 normalMatrix = transpose(inverse(modelViewMatrix));

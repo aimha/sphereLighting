@@ -9,16 +9,16 @@ void ofApp::setup(){
 	sphere.setRadius(200);
 	sphere.setResolution(400);
 
-	plane.set(1000, 1000);
+	plane.set(800, 800);
 	plane.setPosition(0, 0, 0);
-	plane.setResolution(300, 300);
+	plane.setResolution(400, 400);
 
 	mesh = plane.getMesh();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+	
 }
 
 //--------------------------------------------------------------

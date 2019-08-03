@@ -1,3 +1,12 @@
 ﻿  main.cpp
   ofApp.cpp
-d:\07_of\of_v0.10.0_vs2017_release\apps\myapps\spherelighting\src\ofapp.cpp(6): error C2143: errore di sintassi: ';' mancante prima di '}'
+c:\01_dev\00_of\of_v0.10.0_vs2017_release\apps\myapps\spherelighting\src\ofapp.cpp(34): warning C4996: 'ofRotateX': Use ofRotateXDeg or ofRotateXRad
+  c:\01_dev\00_of\of_v0.10.0_vs2017_release\libs\openframeworks\graphics\ofgraphics.h(1022): note: vedere la dichiarazione di 'ofRotateX'
+  sphereLighting.vcxproj -> C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\sphereLighting_debug.exe
+  
+  	                   2	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\libs\fmodex\lib\vs\Win32\
+  	  *File supplementare		 5647872	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\FreeImage.dll
+  
+  	                   1	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\libs\FreeImage\lib\vs\Win32\
+  	  *File supplementare		 1266176	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\fmodex.dll
+  	  *File supplementare		 1312768	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\fmodexL.dll
