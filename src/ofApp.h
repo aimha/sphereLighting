@@ -22,9 +22,15 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 	
 		ofShader lighting;
+		ofShader displace;
+		ofShader normals;
 
-		ofSpherePrimitive sphere;
-		ofPlanePrimitive plane;
+		ofFbo fboDisplaceMap;
+		ofFbo fboNormalsMap;
+
+		ofPlanePrimitive displacePlane;
+		ofPlanePrimitive normalsPlane;
+		
 		ofMesh mesh;
 
 };

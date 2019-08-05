@@ -1,7 +1,4 @@
-﻿  main.cpp
-  ofApp.cpp
-c:\01_dev\00_of\of_v0.10.0_vs2017_release\apps\myapps\spherelighting\src\ofapp.cpp(34): warning C4996: 'ofRotateX': Use ofRotateXDeg or ofRotateXRad
-  c:\01_dev\00_of\of_v0.10.0_vs2017_release\libs\openframeworks\graphics\ofgraphics.h(1022): note: vedere la dichiarazione di 'ofRotateX'
+﻿  ofApp.cpp
   sphereLighting.vcxproj -> C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\apps\myApps\sphereLighting\bin\sphereLighting_debug.exe
   
   	                   2	C:\01_DEV\00_OF\of_v0.10.0_vs2017_release\libs\fmodex\lib\vs\Win32\

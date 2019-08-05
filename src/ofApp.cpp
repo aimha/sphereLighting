@@ -3,41 +3,53 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 	ofBackground(15);
-	
+
+	// shaders
 	lighting.load("shadersGL3/lighting");
+	displace.load("shadersGL3/displace");
+	normals.load("shadersGL3/normals");
 	
-	sphere.setRadius(200);
-	sphere.setResolution(400);
+	fboDisplaceMap.allocate(800, 800);
+	fboNormalsMap.allocate(800, 800);
 
-	plane.set(800, 800);
-	plane.setPosition(0, 0, 0);
-	plane.setResolution(400, 400);
+	displacePlane.set(800, 800);
+	displacePlane.setPosition(0, 0, 0);
+	displacePlane.setResolution(10, 10);
 
-	mesh = plane.getMesh();
+	normalsPlane.set(800, 800);
+	normalsPlane.setPosition(0, 0, 0);
+	normalsPlane.setResolution(10, 10);
+
+	normalsPlane.mapTexCoordsFromTexture(fboDisplaceMap.getTexture());
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	
+	fboDisplaceMap.begin();
+		displace.begin();
+			ofPushMatrix();
+			ofTranslate(400., 400.);
+			displacePlane.draw();
+			ofPopMatrix();
+		displace.end();
+	fboDisplaceMap.end();
+
+	fboNormalsMap.begin();
+		normals.begin();
+		normals.setUniformTexture("tex0", fboDisplaceMap.getTexture(), 0);
+			ofPushMatrix();
+			ofTranslate(400., 400.);
+			normalsPlane.draw();
+			ofPopMatrix();
+		normals.end();
+	fboNormalsMap.end();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	lighting.begin();
-
-	lighting.setUniform1f("time", ofGetElapsedTimef());
-
-	ofEnableDepthTest();
-
-		ofPushMatrix();
-		ofTranslate(ofGetWidth() / 2., ofGetHeight() / 2.);
-		ofRotateX(60);
-		mesh.draw(); 
-		ofPopMatrix();
-		
-	ofDisableDepthTest();
-
-	lighting.end();
+	fboDisplaceMap.draw(0, 0, 800, 800);
+	fboNormalsMap.draw(850, 0, 800, 800);
 }
 
 //--------------------------------------------------------------
